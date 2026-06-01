@@ -32,11 +32,11 @@ export function ShareButton({ title, text }: ShareButtonProps) {
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex min-h-10 items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+        className="inline-flex min-h-10 w-full items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-300 hover:bg-emerald-50"
       >
         Compartir guia
       </button>
-      {message ? <p className="mt-2 text-sm text-slate-600">{message}</p> : null}
+      {message ? <p className="mt-2 text-xs text-slate-600">{message}</p> : null}
     </div>
   );
 }

@@ -25,11 +25,11 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <main className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
-        <header className="mb-6 rounded-lg border border-slate-200 bg-white p-5">
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Buscar</p>
+      <main className="mx-auto w-full max-w-7xl px-4 py-8 md:px-6 md:py-10">
+        <header className="mb-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">Buscar</p>
           <h1 className="mt-2 text-3xl font-semibold text-slate-900">Buscador de guias</h1>
-          <p className="mt-3 text-slate-700">
+          <p className="mt-3 text-sm leading-7 text-slate-700">
             Consulta tramites por tema, tipo de fuente y palabras clave en una sola vista.
           </p>
         </header>
@@ -44,7 +44,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex min-h-10 items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+            className="inline-flex min-h-10 items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-300 hover:bg-emerald-50"
           >
             Volver al inicio
           </Link>

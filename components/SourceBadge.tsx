@@ -38,14 +38,14 @@ export function SourceBadge({ guide }: SourceBadgeProps) {
         : "Pendiente";
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-1.5">
       <span
-        className={`inline-flex rounded-md border px-2 py-1 text-xs font-semibold uppercase tracking-wide ${sourceClass}`}
+        className={`inline-flex rounded-md border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${sourceClass}`}
       >
         {sourceLabel}
       </span>
       <span
-        className={`inline-flex rounded-md border px-2 py-1 text-xs font-semibold uppercase tracking-wide ${statusClass}`}
+        className={`inline-flex rounded-md border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${statusClass}`}
       >
         {statusLabel}
       </span>
