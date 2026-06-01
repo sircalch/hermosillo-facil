@@ -1,0 +1,44 @@
+[
+  {
+    "id": "emergencias-911",
+    "name": "Emergencias",
+    "number": "911",
+    "description": "Atencion inmediata para emergencias medicas, seguridad o proteccion civil.",
+    "schedule": "24/7"
+  },
+  {
+    "id": "servicios-072",
+    "name": "Atencion Ciudadana",
+    "number": "072",
+    "description": "Canal municipal para reportes de servicios publicos y orientacion.",
+    "schedule": "Lun-Vie 08:00-20:00"
+  },
+  {
+    "id": "agua-073",
+    "name": "Agua de Hermosillo",
+    "number": "073",
+    "description": "Reportes de fugas, baja presion y temas operativos de agua.",
+    "schedule": "Lun-Vie 08:00-20:00"
+  },
+  {
+    "id": "proteccion-civil",
+    "name": "Proteccion Civil Hermosillo",
+    "number": "662 289 3055",
+    "description": "Orientacion preventiva y reportes de riesgo urbano.",
+    "schedule": "Lun-Vie 08:00-15:00"
+  },
+  {
+    "id": "dif-hermosillo",
+    "name": "DIF Hermosillo",
+    "number": "662 254 5410",
+    "description": "Programas de apoyo social, comunitario y orientacion familiar.",
+    "schedule": "Lun-Vie 08:00-15:00"
+  },
+  {
+    "id": "imca-hermosillo",
+    "name": "Instituto Municipal de Cultura y Arte",
+    "number": "662 213 3394",
+    "description": "Informacion sobre actividades culturales y talleres.",
+    "schedule": "Lun-Vie 09:00-15:00"
+  }
+]

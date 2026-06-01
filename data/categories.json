@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "tramites",
+    "name": "Tramites",
+    "description": "Guias rapidas para gestiones frecuentes de la ciudad."
+  },
+  {
+    "slug": "becas",
+    "name": "Becas",
+    "description": "Opciones de apoyo academico y documentos comunes."
+  },
+  {
+    "slug": "apoyos",
+    "name": "Apoyos",
+    "description": "Programas y requisitos de asistencia social."
+  },
+  {
+    "slug": "reportes-ciudadanos",
+    "name": "Reportes Ciudadanos",
+    "description": "Como reportar servicios publicos y seguimiento."
+  },
+  {
+    "slug": "salud",
+    "name": "Salud",
+    "description": "Acceso a atencion basica y directorios de consulta."
+  },
+  {
+    "slug": "educacion",
+    "name": "Educacion",
+    "description": "Inscripciones, validaciones y soporte escolar."
+  },
+  {
+    "slug": "servicios-publicos",
+    "name": "Servicios Publicos",
+    "description": "Agua, alumbrado, limpieza y temas operativos de la ciudad."
+  },
+  {
+    "slug": "emergencias",
+    "name": "Emergencias",
+    "description": "Numeros y rutas de contacto para respuesta inmediata."
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "reporte-alumbrado-publico",
+    "title": "Reporte de Alumbrado Publico",
+    "category": "servicios-publicos",
+    "summary": "Guia para reportar una luminaria apagada o danada en tu colonia.",
+    "requirements": [
+      "Ubicacion exacta de la luminaria",
+      "Referencia de calle y colonia",
+      "Fotografia opcional"
+    ],
+    "steps": [
+      "Identifica poste, esquina o numero cercano.",
+      "Registra colonia y entrecalles.",
+      "Realiza reporte en portal o via telefonica.",
+      "Guarda folio para seguimiento."
+    ],
+    "officialLink": "https://www.hermosillo.gob.mx/",
+    "phone": "072",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Ayuntamiento de Hermosillo",
+    "verificationStatus": "vigente"
+  },
+  {
+    "slug": "solicitud-beca-municipal",
+    "title": "Solicitud de Beca Municipal",
+    "category": "becas",
+    "summary": "Pasos base para iniciar un registro de beca de nivel medio o superior.",
+    "requirements": [
+      "Identificacion oficial",
+      "Comprobante de estudios",
+      "Comprobante de domicilio",
+      "CURP"
+    ],
+    "steps": [
+      "Consulta convocatoria vigente.",
+      "Reune archivos en formato digital.",
+      "Realiza registro en plataforma oficial.",
+      "Da seguimiento a fechas de resultado."
+    ],
+    "officialLink": "https://www.hermosillo.gob.mx/",
+    "phone": "662 289 3000",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Ayuntamiento de Hermosillo",
+    "verificationStatus": "vigente"
+  },
+  {
+    "slug": "tramite-licencia-conducir",
+    "title": "Tramite de Licencia de Conducir",
+    "category": "tramites",
+    "summary": "Resumen de requisitos comunes para licencia de conducir en la ciudad.",
+    "requirements": [
+      "Identificacion vigente",
+      "Comprobante de domicilio reciente",
+      "CURP",
+      "Pago de derechos"
+    ],
+    "steps": [
+      "Verifica modulo y horarios oficiales.",
+      "Agenda cita cuando aplique.",
+      "Presenta documentos y realiza evaluacion requerida.",
+      "Recibe comprobante y licencia."
+    ],
+    "officialLink": "https://www.sonora.gob.mx/",
+    "phone": "662 108 4000",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Gobierno del Estado de Sonora",
+    "verificationStatus": "vigente"
+  },
+  {
+    "slug": "reporte-fuga-agua",
+    "title": "Reporte de Fuga de Agua",
+    "category": "servicios-publicos",
+    "summary": "Proceso corto para reportar fugas en calle o toma domiciliaria.",
+    "requirements": [
+      "Direccion o referencia del punto",
+      "Descripcion del tipo de fuga",
+      "Telefono de contacto opcional"
+    ],
+    "steps": [
+      "Ubica direccion precisa del incidente.",
+      "Describe si la fuga es en banqueta, calle o toma.",
+      "Reporta por linea de atencion.",
+      "Solicita numero de folio."
+    ],
+    "officialLink": "https://www.aguahermosillo.gob.mx/",
+    "phone": "073",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Agua de Hermosillo",
+    "verificationStatus": "vigente"
+  },
+  {
+    "slug": "consulta-centro-salud",
+    "title": "Consulta en Centro de Salud",
+    "category": "salud",
+    "summary": "Como acceder a consulta general en centros de salud urbanos.",
+    "requirements": [
+      "Identificacion",
+      "CURP",
+      "Cartilla o numero de expediente si existe"
+    ],
+    "steps": [
+      "Identifica centro de salud por zona.",
+      "Confirma horario de fichas o ventanilla.",
+      "Acude con documentos y datos del paciente.",
+      "Solicita orientacion para seguimiento."
+    ],
+    "officialLink": "https://saludsonora.gob.mx/",
+    "phone": "662 216 2759",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Secretaria de Salud Sonora",
+    "verificationStatus": "en-revision"
+  },
+  {
+    "slug": "reporte-bache-calle",
+    "title": "Reporte de Bache en Calle",
+    "category": "reportes-ciudadanos",
+    "summary": "Guia para levantar reporte de bache o deterioro vial.",
+    "requirements": [
+      "Ubicacion con referencia",
+      "Descripcion del riesgo vial",
+      "Imagen opcional"
+    ],
+    "steps": [
+      "Toma nota de colonia y cruces.",
+      "Registra tamano aproximado del dano.",
+      "Levanta reporte por portal o telefono.",
+      "Conserva folio y fecha de reporte."
+    ],
+    "officialLink": "https://www.hermosillo.gob.mx/",
+    "phone": "072",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Ayuntamiento de Hermosillo",
+    "verificationStatus": "vigente"
+  },
+  {
+    "slug": "inscripcion-preparatoria-publica",
+    "title": "Inscripcion a Preparatoria Publica",
+    "category": "educacion",
+    "summary": "Pasos frecuentes para registro y entrega documental.",
+    "requirements": [
+      "Acta de nacimiento",
+      "CURP",
+      "Certificado de secundaria",
+      "Comprobante de domicilio"
+    ],
+    "steps": [
+      "Consulta calendario de preinscripcion.",
+      "Carga o entrega documentos solicitados.",
+      "Da seguimiento a lista de asignacion.",
+      "Completa inscripcion final en plantel."
+    ],
+    "officialLink": "https://www.sec.gob.mx/",
+    "phone": "662 289 7600",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "Secretaria de Educacion y Cultura",
+    "verificationStatus": "en-revision"
+  },
+  {
+    "slug": "apoyo-alimentario-comunitario",
+    "title": "Apoyo Alimentario Comunitario",
+    "category": "apoyos",
+    "summary": "Referencia inicial para registro en programas de apoyo alimentario.",
+    "requirements": [
+      "Identificacion oficial",
+      "Comprobante de domicilio",
+      "CURP",
+      "Formato de solicitud"
+    ],
+    "steps": [
+      "Revisa convocatoria y criterios de elegibilidad.",
+      "Integra expediente con documentos vigentes.",
+      "Entrega solicitud en modulo autorizado.",
+      "Consulta estado del registro."
+    ],
+    "officialLink": "https://difhermosillo.gob.mx/",
+    "phone": "662 254 5410",
+    "location": "Hermosillo, Sonora",
+    "updatedAt": "2026-05-30",
+    "sourceType": "oficial",
+    "sourceName": "DIF Hermosillo",
+    "verificationStatus": "vigente"
+  }
+]
