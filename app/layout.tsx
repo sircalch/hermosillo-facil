@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import {
-  CircleHelp,
-  Database,
   Phone,
   Search,
   SquareArrowOutUpRight,
@@ -27,6 +25,7 @@ export const metadata: Metadata = {
 };
 
 const DONATION_URL = process.env.NEXT_PUBLIC_DONATION_URL ?? "";
+const SHOW_INTERNAL_NAV = process.env.NEXT_PUBLIC_SHOW_INTERNAL_NAV === "true";
 
 export default function RootLayout({
   children,
@@ -86,20 +85,22 @@ export default function RootLayout({
                 <Phone className="h-4 w-4" aria-hidden="true" />
                 Telefonos
               </Link>
-              <Link
-                href="/about"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
-              >
-                <CircleHelp className="h-4 w-4" aria-hidden="true" />
-                Acerca
-              </Link>
-              <Link
-                href="/admin/guias"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
-              >
-                <Database className="h-4 w-4" aria-hidden="true" />
-                Admin
-              </Link>
+              {SHOW_INTERNAL_NAV ? (
+                <>
+                  <Link
+                    href="/about"
+                    className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
+                  >
+                    Acerca
+                  </Link>
+                  <Link
+                    href="/admin/guias"
+                    className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
+                  >
+                    Admin
+                  </Link>
+                </>
+              ) : null}
             </nav>
           </div>
         </header>

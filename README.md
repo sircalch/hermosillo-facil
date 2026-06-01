@@ -83,6 +83,14 @@ Sin variables, usa `data/guides.json` local.
 
 Schema sugerido: `supabase/schema.sql`
 
+### Seguridad de rutas internas
+
+Las rutas `/about` y `/admin/*` estan protegidas con HTTP Basic Auth en `proxy.ts`.
+
+- `INTERNAL_ROUTE_USER`
+- `INTERNAL_ROUTE_PASSWORD`
+- `NEXT_PUBLIC_SHOW_INTERNAL_NAV` (opcional, `true` para mostrar links internos en el menu)
+
 ### Deploy
 
 Recomendado en Vercel.
