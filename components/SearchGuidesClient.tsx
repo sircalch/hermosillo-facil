@@ -22,6 +22,7 @@ type SearchGuidesClientProps = {
 };
 
 type RemoteSource = "seed" | "supabase";
+type SortMode = "relevance" | "updated-desc" | "updated-asc" | "title-asc";
 
 export function SearchGuidesClient({
   guides,
@@ -42,6 +43,7 @@ export function SearchGuidesClient({
   const [remoteSource, setRemoteSource] = useState<RemoteSource>("seed");
   const [isRemoteLoading, setIsRemoteLoading] = useState(false);
   const [remoteError, setRemoteError] = useState<string | null>(null);
+  const [sortMode, setSortMode] = useState<SortMode>("relevance");
   const categories = getAllCategories();
 
   useEffect(() => {
@@ -197,6 +199,32 @@ export function SearchGuidesClient({
   }, [overrideGuides, guides, query, category, sourceType]);
 
   const filteredGuides = overrideGuides ? localFilteredGuides : remoteGuides;
+  const orderedGuides = useMemo(() => {
+    const next = [...filteredGuides];
+
+    if (sortMode === "updated-desc") {
+      next.sort(
+        (a, b) =>
+          new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+      );
+      return next;
+    }
+
+    if (sortMode === "updated-asc") {
+      next.sort(
+        (a, b) =>
+          new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime(),
+      );
+      return next;
+    }
+
+    if (sortMode === "title-asc") {
+      next.sort((a, b) => a.title.localeCompare(b.title, "es"));
+      return next;
+    }
+
+    return next;
+  }, [filteredGuides, sortMode]);
 
   const quickTerms = ["licencia", "predial", "beca", "agua", "alumbrado"];
   const categoryLabel =
@@ -212,6 +240,12 @@ export function SearchGuidesClient({
   };
   const sourceLabel = sourceLabelMap[sourceType] ?? sourceType;
   const datasetLabel = overrideGuides ? "local (admin)" : remoteSource;
+  const clearFilters = () => {
+    setQuery("");
+    setCategory("all");
+    setSourceType("all");
+    setSortMode("relevance");
+  };
 
   return (
     <div className="grid gap-5 lg:grid-cols-[0.32fr_0.68fr]">
@@ -264,6 +298,28 @@ export function SearchGuidesClient({
             <option value="verificado">Verificado</option>
           </select>
         </label>
+
+        <label className="mt-3 block text-sm text-slate-700">
+          Orden
+          <select
+            value={sortMode}
+            onChange={(event) => setSortMode(event.target.value as SortMode)}
+            className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900"
+          >
+            <option value="relevance">Relevancia</option>
+            <option value="updated-desc">Mas recientes</option>
+            <option value="updated-asc">Mas antiguas</option>
+            <option value="title-asc">Titulo A-Z</option>
+          </select>
+        </label>
+
+        <button
+          type="button"
+          onClick={clearFilters}
+          className="mt-4 inline-flex min-h-9 items-center justify-center rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+        >
+          Limpiar filtros
+        </button>
       </section>
 
       <div className="space-y-4">
@@ -274,7 +330,7 @@ export function SearchGuidesClient({
               Resultados
             </h2>
             <p className="text-sm font-medium text-slate-700">
-              {filteredGuides.length} guias
+              {orderedGuides.length} guias
             </p>
           </div>
           <p className="mt-2 inline-flex items-center gap-2 text-xs text-slate-600">
@@ -311,12 +367,12 @@ export function SearchGuidesClient({
         </section>
 
         <section className="space-y-3">
-          {filteredGuides.map((guide) => (
+          {orderedGuides.map((guide) => (
             <GuideCard key={guide.slug} guide={guide} />
           ))}
         </section>
 
-        {filteredGuides.length === 0 ? (
+        {orderedGuides.length === 0 ? (
           <section className="rounded-lg border border-slate-200 bg-white p-5">
             <p className="text-sm text-slate-700">
               No se encontraron guias para esa busqueda.

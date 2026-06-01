@@ -36,31 +36,33 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-slate-50">
+      <body className="min-h-full flex flex-col">
         <a
           href="#contenido"
           className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-slate-900 focus:px-3 focus:py-2 focus:text-sm focus:text-white"
         >
           Saltar al contenido
         </a>
-        <header className="border-b border-slate-300 bg-white">
-          <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 border-b border-slate-200 px-4 py-2 md:px-6">
-            <p className="text-xs font-medium text-slate-600">
+        <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur">
+          <div className="bg-emerald-50/80">
+            <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 border-b border-emerald-100 px-4 py-2 md:px-6">
+              <p className="text-xs font-medium text-slate-700">
               Directorio local de tramites y servicios con criterios de calidad de fuente.
-            </p>
-            <a
-              href="https://www.hermosillo.gob.mx/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex min-h-9 items-center gap-2 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 transition hover:bg-slate-100"
-            >
-              Portal Hermosillo
-              <SquareArrowOutUpRight className="h-4 w-4" aria-hidden="true" />
-            </a>
+              </p>
+              <a
+                href="https://www.hermosillo.gob.mx/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-9 items-center gap-2 rounded-md bg-emerald-700 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-emerald-600"
+              >
+                Portal Hermosillo
+                <SquareArrowOutUpRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
           </div>
           <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-6">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
                 Servicio local
               </p>
               <Link href="/" className="text-xl font-semibold text-slate-900">
@@ -70,28 +72,28 @@ export default function RootLayout({
             <nav className="flex flex-wrap items-center gap-2 text-sm">
               <Link
                 href="/buscar"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100"
+                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
               >
                 <Search className="h-4 w-4" aria-hidden="true" />
                 Buscar
               </Link>
               <Link
                 href="/telefonos"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100"
+                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
               >
                 <Phone className="h-4 w-4" aria-hidden="true" />
                 Telefonos
               </Link>
               <Link
                 href="/about"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100"
+                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
               >
                 <CircleHelp className="h-4 w-4" aria-hidden="true" />
                 Acerca
               </Link>
               <Link
                 href="/admin/guias"
-                className="inline-flex min-h-10 items-center gap-2 rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100"
+                className="inline-flex min-h-10 items-center gap-2 rounded-md border border-transparent px-3 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50"
               >
                 <Database className="h-4 w-4" aria-hidden="true" />
                 Admin
